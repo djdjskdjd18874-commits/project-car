@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.ts";
+
+
+
+
+.bg-image {
+    background-image: url('./../public/photo/download.jpg');
+    background-size:  cover ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+
+.bg-cover {
+    background-image: url('./../public/photo/cover1.jpg');
+    background-size:  cover ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%); /* يبدأ خارج الشاشة من اليسار */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* يرجع لمكانه الطبيعي */
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slideInRight 1.5s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); /* يبدأ خارج الشاشة من اليمين */
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); /* يرجع لمكانه الطبيعي */
+    opacity: 1;
+  }
+}
