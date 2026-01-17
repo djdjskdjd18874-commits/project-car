@@ -7,7 +7,7 @@ import ContactUs from './pages/ContactUs'
 import Footer from './componats/Footer'
 
 import Car from './pages/Car'
-import Card from './pages/Card'
+
 import product from './static/product'
 import SignupPage from './pages/SignupPage'
 
@@ -26,7 +26,7 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/ContactUs" element={<ContactUs />} />
       <Route path="/Car" element={<Car />} />
-     <Route path="/Card" element={<Card  />} />
+     
      <Route path="/SignupPage" element={<SignupPage />} />
      </Routes>
      <Footer/>
