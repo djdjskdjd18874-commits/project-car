@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <footer className="bg-gray-900 text-gray-200 py-10">
   <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
     
-    {/* معلومات الشركة */}
+   
     <div>
       <h2 className="text-xl font-bold mb-4">Luxury Wheels Rental</h2>
       <p className="text-sm leading-relaxed">
@@ -15,7 +15,7 @@ export default function Footer() {
       </p>
     </div>
 
-    {/* روابط سريعة */}
+   
     <div>
       <h2 className="text-xl font-bold mb-4">Quick Links</h2>
       <ul className="space-y-2 text-sm">
@@ -26,7 +26,7 @@ export default function Footer() {
       </ul>
     </div>
 
-    {/* وسائل التواصل */}
+    
     <div>
       <h2 className="text-xl font-bold mb-4">Contact Us</h2>
       <p className="text-sm">📍 Cairo, Egypt</p>
@@ -40,7 +40,7 @@ export default function Footer() {
     </div>
   </div>
 
-  {/* حقوق النشر */}
+  
   <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm">
     © {new Date().getFullYear()} Luxury Wheels Rental. All rights reserved.
   </div>

@@ -1,7 +1,7 @@
 
 
 import { useFavorites } from "../hooks/useFavorites";
-import products from "../static/product";
+
 
 export type Product = {
   id: number;
@@ -19,11 +19,11 @@ type Props = {
 const FavButton: React.FC<Props> = ({ product }) => {
   const { isFavorite, toggleFavorite } = useFavorites();
 
-  const favorite = isFavorite(product.id); // هنا نمرر id فقط
+  const favorite = isFavorite(product.id); 
 
   return (
     <button
-      onClick={() => toggleFavorite(product.id)} // هنا نمرر id فقط
+      onClick={() => toggleFavorite(product.id)} 
       className={`px-4 py-2 rounded transition-colors
         ${favorite ? "bg-red-600 text-white" : "bg-gray-300 text-black hover:bg-gray-400"}`}
     >

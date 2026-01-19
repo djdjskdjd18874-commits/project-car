@@ -30,11 +30,11 @@
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%); /* يبدأ خارج الشاشة من اليسار */
+    transform: translateX(-100%); 
     opacity: 0;
   }
   to {
-    transform: translateX(0); /* يرجع لمكانه الطبيعي */
+    transform: translateX(0); 
     opacity: 1;
   }
 }
@@ -44,11 +44,11 @@
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100%); /* يبدأ خارج الشاشة من اليمين */
+    transform: translateX(100%); 
     opacity: 0;
   }
   to {
-    transform: translateX(0); /* يرجع لمكانه الطبيعي */
+    transform: translateX(0); 
     opacity: 1;
   }
 }

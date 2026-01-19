@@ -62,7 +62,7 @@ export default function MyForm() {
   return (
     <div className="min-h-screen flex items-center justify-center  px-4">
       <div className="bg-white/90 backdrop-blur-md p-6 rounded-lg shadow-lg w-full max-w-sm md:max-w-lg">
-        {/* Title */}
+      
         <h1 className="text-2xl md:text-3xl font-bold text-center text-blue-900 mb-2">
           Welcome Back
         </h1>
@@ -70,11 +70,11 @@ export default function MyForm() {
           Please sign in to continue
         </p>
 
-        {/* Form */}
+      
         <Formik initialValues={initValues} onSubmit={handleSubmit}>
           {() => (
             <Form className="flex flex-col gap-4">
-              {/* Email */}
+             
               <div className="flex flex-col">
                 <label htmlFor="email" className="text-sm font-semibold text-gray-900">
                   Email
@@ -88,7 +88,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Password */}
+              
               <div className="flex flex-col">
                 <label htmlFor="password" className="text-sm font-semibold text-gray-900">
                   Password
@@ -102,7 +102,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Address */}
+           
               <div className="flex flex-col">
                 <label htmlFor="address" className="text-sm font-semibold text-gray-900">
                   Address
@@ -116,7 +116,6 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* City */}
               <div className="flex flex-col">
                 <label htmlFor="city" className="text-sm font-semibold text-gray-900">
                   City
@@ -130,7 +129,6 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* State */}
               <div className="flex flex-col">
                 <label htmlFor="state" className="text-sm font-semibold text-gray-900">
                   State
@@ -148,7 +146,7 @@ export default function MyForm() {
                 </Field>
               </div>
 
-              {/* Zip */}
+            
               <div className="flex flex-col">
                 <label htmlFor="zip" className="text-sm font-semibold text-gray-900">
                   Zip
@@ -162,7 +160,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Checkbox */}
+              
               <div className="flex items-center">
                 <Field
                   type="checkbox"
@@ -175,7 +173,7 @@ export default function MyForm() {
                 </label>
               </div>
 
-              {/* Submit Button */}
+             
               <button
                 type="submit"
                 className="w-full px-6 py-2 bg-yellow-600 text-white font-semibold rounded-md hover:bg-yellow-700 transition"
@@ -186,7 +184,7 @@ export default function MyForm() {
           )}
         </Formik>
 
-        {/* Footer Links */}
+        
         <p className="text-sm text-gray-600 text-center mt-4">
           Don't have an account?{" "}
           <a href="/register" className="text-blue-600 hover:underline">

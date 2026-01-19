@@ -33,7 +33,7 @@ export default function MyForm() {
           "Accept": "application/json",
         },
         body: JSON.stringify({
-          username: values.email, // dummyjson بيستخدم username بدل email
+          username: values.email, 
           password: values.password,
           address: values.address,
           address2: values.address2,
@@ -61,8 +61,9 @@ export default function MyForm() {
 
   return (
     <>
+    <br />
       <div
-        className="text-black hidden md:grid bg-fixed bg-center  h-screen grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-12"
+        className="text-black hidden md:grid  bg-fixed bg-center  h-screen grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-12"
         style={{ backgroundImage: "url('./../public/photo/bg-car.jpg')" }}
       >
         {/* النصوص */}
@@ -72,7 +73,7 @@ export default function MyForm() {
             Enjoy our premium car rental and limousine services in Egypt
           </h3>
           <h3 className="text-base mt-4 text-white">
-            Are you looking for a reliable, upscale, and professional service? Look no further! Kayan is
+            Are you looking for a reliable, upscale, and professional service? Look no further! Luxury Wheels is
           </h3>
           <span className="text-base mt-4 text-white">here for you</span>
           <h2 className="text-xl mt-4 font-semibold text-white">
@@ -84,7 +85,7 @@ export default function MyForm() {
         <Formik initialValues={initValues} onSubmit={handleSubmit}>
           {() => (
             <Form className="bg-white/70 slide-in-right opacity-80 backdrop-blur-md  p-8 rounded-lg shadow-lg max-w-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Email */}
+              
               <div className="flex flex-col">
                 <label htmlFor="email" className="text-sm font-semibold text-gray-900">
                   Email
@@ -97,7 +98,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Password */}
+          
               <div className="flex flex-col">
                 <label htmlFor="password" className="text-sm font-semibold text-gray-900">
                   Password
@@ -110,7 +111,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Address */}
+             
               <div className="md:col-span-2 flex flex-col">
                 <label htmlFor="address" className="text-sm font-semibold text-gray-900">
                   Address
@@ -124,7 +125,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Address 2 */}
+             
               <div className="md:col-span-2 flex flex-col">
                 <label htmlFor="address2" className="text-sm font-semibold text-gray-900">
                   Address 2
@@ -138,7 +139,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* City */}
+             
               <div className="flex flex-col">
                 <label htmlFor="city" className="text-sm font-semibold text-gray-900">
                   City
@@ -151,7 +152,7 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* State */}
+              
               <div className="flex flex-col">
                 <label htmlFor="state" className="text-sm font-semibold text-gray-900">
                   State
@@ -169,7 +170,7 @@ export default function MyForm() {
                 </Field>
               </div>
 
-              {/* Zip */}
+             
               <div className="flex flex-col">
                 <label htmlFor="zip" className="text-sm font-semibold text-gray-900">
                   Zip
@@ -182,7 +183,6 @@ export default function MyForm() {
                 />
               </div>
 
-              {/* Checkbox */}
               <div className="md:col-span-2 flex items-center">
                 <Field
                   type="checkbox"
@@ -195,7 +195,6 @@ export default function MyForm() {
                 </label>
               </div>
 
-              {/* Submit Button */}
               <div className="md:col-span-2">
                 <button
                   type="submit"

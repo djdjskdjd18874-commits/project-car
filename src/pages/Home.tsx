@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Form from "../componats/Form";
 import Cards from "../componats/Cards";
 import {  Link } from "react-router-dom";
-import products from "../static/product";
-import Foorm2 from "./Car";
+
 
 
 

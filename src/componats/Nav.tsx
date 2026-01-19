@@ -7,10 +7,10 @@ export default function Nav() {
   const [open, setOpen] = useState(false);
 
   return <>
-    <nav className="bg-blue-900 border-b border-gray-700">
-      {/* الشريط العلوي */}
+    <nav className="bg-blue-900 border-b  border-gray-700 ">
+     
       <div className="h-20 flex items-center justify-between px-4 md:px-10">
-        {/* Logo */}
+        
        <div className="flex justify-center items-center w-full">
   <Link
     to="/"
@@ -18,10 +18,15 @@ export default function Nav() {
   >
     Luxury Wheels
   </Link>
+  <div className="px-4 py-2 md:hidden">
+    <ToggleTheme />
+  </div>
+   
 </div>
 
 
-        {/* زر الموبايل (Hamburger) */}
+
+        {/* زر الموبايل  */}
         <a
           className="text-yellow-400 md:hidden"
           onClick={() => setOpen(!open)}
@@ -54,7 +59,7 @@ export default function Nav() {
 
       {/* القائمة */}
      <div
-  className={`flex-col md:flex md:flex-row md:items-center md:gap-10 transition-all duration-300 
+  className={`slide-in-left flex-col md:flex md:flex-row md:items-center  md:gap-10 transition-all duration-300 
     ${open ? "flex" : "hidden md:flex"} md:justify-center md:flex-1`}
 >
   
@@ -76,10 +81,11 @@ export default function Nav() {
   Sign In
   
   </Link>
-
-  <div className="px-4 py-2">
+  <div className="px-4 py-2 hidden md:grid ">
     <ToggleTheme />
   </div>
+
+ 
 </div>
 
     </nav>

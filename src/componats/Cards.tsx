@@ -1,7 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import  { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {  Link } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Cards() {
   const sectionRef = useRef(null);
@@ -11,7 +13,7 @@ export default function Cards() {
 
     gsap.fromTo(
       el,
-      { y: 100, opacity: 0 },   // يبدأ من تحت مع شفافية
+      { y: 100, opacity: 0 },   
       {
         y: 0,
         opacity: 1,
@@ -19,7 +21,7 @@ export default function Cards() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: el,
-          start: "top 80%",   // يبدأ لما يوصل العنصر 80% من الشاشة
+          start: "top 80%",   
           toggleActions: "play none none reverse"
         }
       }
@@ -49,12 +51,12 @@ export default function Cards() {
   We provide a delivery service to the airport, no matter what airport you are traveling through “Cairo Airport, Burj Al Arab Airport, Sharm El Sheikh Airport or even Aswan Airport.” We are with you 24 hours in a delivery service to and from the airport from # Luxury Wheels_Group at very special prices.. Wind Yourself and contact us, and we will deliver you from home to any airport in Egypt, on the day and time that you specify to go or return.
 </p>
 
-            <a
-              href="#"
+            <Link
+              to="/Car"
               className="inline-block mt-4 bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600 transition "
             >
               Book
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -70,12 +72,12 @@ export default function Cards() {
             <p className="text-gray-600 mt-2">
               Luxury Wheels  helps you to rent cars in installments from.
             </p>
-            <a
-              href="#"
+            <Link
+             to="/Car"
               className="inline-block mt-4 bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600 transition "
             >
               Book
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -93,12 +95,12 @@ export default function Cards() {
             <p className="text-gray-600 mt-2 text-base hidden md:block">
               Luxury Wheels Rental | Luxury Wheels Rent helps you start your wedding in a different and distinctive way from others, with the latest models of cars for rent such as Porsche Cabriolet, BMW Cabriolet, and 12-meter stretch cars for wedding and party rental.
             </p>
-            <a
-              href="#"
+            <Link
+              to="/Car"
               className="inline-block mt-4 bg-yellow-500 text-white px-4 py-2 rounded-lg shadow hover:bg-yellow-600 transition "
             >
               Book
-            </a>
+            </Link>
           </div>
         </div>
       </div>
