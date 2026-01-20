@@ -36,7 +36,7 @@ export default function ContactUs() {
   {/* الصورة */}
   <div className="flex-1 w-full flex justify-center mt-6 md:mt-0">
     <img
-      src="./../public/photo/image1.png"
+      src="/photo/image1.png"
       alt="Card image"
       className="w-full h-auto max-w-xs md:max-w-md object-cover rounded-lg shadow-md"
     />

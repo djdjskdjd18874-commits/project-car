@@ -152,7 +152,7 @@ export default function () {
         {/* الصورة */}
         <div className="flex-1 flex justify-center">
           <img
-            src="./../public/photo/image1.png"
+            src="/photo/image1.png"
             alt="Card image"
             className="w-full h-auto max-w-md object-cover rounded-lg shadow-md"
           />

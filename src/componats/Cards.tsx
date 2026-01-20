@@ -35,7 +35,7 @@ export default function Cards() {
         className="  md:flex justify-center p-6 gap-6">
         <div className=" bg-white rounded-lg shadow-md w-72 overflow-hidden">
           <img
-            src="./../public/photo/card1.jpg"
+            src="/photo/card1.jpg"
             alt="Card image"
             className="w-full h-48 object-cover"
           />
@@ -63,7 +63,7 @@ export default function Cards() {
         {/* الكارد الثاني */}
         <div className=" bg-white rounded-lg shadow-md w-72 overflow-hidden">
           <img
-            src="./../public/photo/card2.jpg"
+            src="/photo/card2.jpg"
             alt="Card image"
             className="w-full h-48 object-cover"
           />
@@ -84,7 +84,7 @@ export default function Cards() {
         {/* الكارد الثالث */}
         <div className=" bg-white rounded-lg shadow-md w-72 overflow-hidden">
           <img
-            src="./../public/photo/card3.jpg"
+            src="/photo/card3.jpg"
             alt="Card image"
             className="w-full h-48 object-cover"
           />
