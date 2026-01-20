@@ -64,7 +64,7 @@ export default function MyForm() {
     <br />
       <div
         className="text-black hidden md:grid  bg-fixed bg-center  h-screen grid grid-cols-1 md:grid-cols-2 gap-10 px-8 py-12"
-        style={{ backgroundImage: "url('./../public/photo/bg-car.jpg')" }}
+        style={{ backgroundImage: "url('photo/bg-car.jpg')" }}
       >
         {/* النصوص */}
         <div className="slide-in-left">

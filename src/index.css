@@ -6,7 +6,7 @@
 
 
 .bg-image {
-    background-image: url('./../public/photo/download.jpg');
+    background-image: url('photo/download.jpg');
     background-size:  cover ;
     background-position: center center;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 
 
 .bg-cover {
-    background-image: url('./../public/photo/cover1.jpg');
+    background-image: url('photo/cover1.jpg');
     background-size:  cover ;
     background-position: center center;
     background-repeat: no-repeat;

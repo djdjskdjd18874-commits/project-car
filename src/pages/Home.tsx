@@ -165,7 +165,7 @@ export default function () {
 
        <div
   className="relative flex flex-col justify-center items-center h-screen text-center text-neutral-50 bg-fixed bg-center bg-cover"
-  style={{ backgroundImage: "url('./../public/photo/cover1.jpg')" }}
+  style={{ backgroundImage: "url('/photo/cover1.jpg')" }}
 >
   <h1 className="text-amber-500 text-5xl font-bold mb-6 animate-bounce">About Us</h1>
   <p className="max-w-2xl text-lg leading-relaxed px-6">
