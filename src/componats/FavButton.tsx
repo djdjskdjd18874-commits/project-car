@@ -1,7 +1,4 @@
-
-
 import { useFavorites } from "../hooks/useFavorites";
-
 
 export type Product = {
   id: number;
@@ -13,13 +10,12 @@ export type Product = {
 
 type Props = {
   product: Product;
-  
 };
 
 const FavButton: React.FC<Props> = ({ product }) => {
   const { isFavorite, toggleFavorite } = useFavorites();
 
-  const favorite = isFavorite(product.id); 
+  const favorite = isFavorite(product.id);
 
   return (
     <button
@@ -33,7 +29,8 @@ const FavButton: React.FC<Props> = ({ product }) => {
 };
 
 export default FavButton;
-console.log(FavButton);
+
+
 
 
 

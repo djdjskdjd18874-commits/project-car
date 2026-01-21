@@ -14,6 +14,7 @@ import SignupPage from './pages/SignupPage'
 
 
 
+
  
 
 function App() {
@@ -25,9 +26,10 @@ function App() {
 
       <Route path="/" element={<Home />} />
       <Route path="/ContactUs" element={<ContactUs />} />
-      <Route path="Car" element={<Car />} />
-     
+      <Route path="/Car" element={<Car  />} />
+      
      <Route path="/SignupPage" element={<SignupPage />} />
+    
      </Routes>
      <Footer/>
      

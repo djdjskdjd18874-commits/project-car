@@ -52,7 +52,7 @@ export default class Car extends Component {
           <br />
 
 
-<FavButton product={product} />
+<FavButton product={product}/>
 
 
         </div>

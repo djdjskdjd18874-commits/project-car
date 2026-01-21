@@ -11,6 +11,7 @@ import {  Link } from "react-router-dom";
 
 
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -70,6 +71,7 @@ export default function () {
     <>
       <Form />
      
+    
     
       
       
@@ -161,6 +163,8 @@ export default function () {
 
 
 
+      <br />
+      <br />
       
 
        <div
@@ -197,6 +201,8 @@ export default function () {
 </div>
 
 </div>
+
+
 
 
      
